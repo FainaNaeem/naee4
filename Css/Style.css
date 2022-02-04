@@ -1,0 +1,127 @@
+/*-----universal box sizing---*/
+*{
+    box-sizing: border-box;
+}
+
+/*-----Body---*/
+body{
+    font: 1vw/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;        /* for light Grey color */
+}
+header{
+    background : #35424a;      /* for dark Grey color */
+    color: #ffff;            /* for whitecolor */
+    min-height: 60px; /* set a min-height to make it responsive and the screen is smaller and the text grows or the menu goes on next line we want the height to adjust */
+    border-bottom: #e8491D 4px solid;     /* for orange color and then width and style*/
+}
+header .current a{
+    color: #e8491D;
+    font-weight: bold;
+}
+footer{
+    background : #35424a;      /* for dark Grey color */
+    color: #ffff;            /* for whitecolor */
+    min-height: 60px; /* set a min-height to make it responsive and the screen is smaller and the text grows or the menu goes on next line we want the height to adjust */
+    border-bottom: #e8491D 4px solid;
+    text-align: center;
+    font-size: 1vw;
+}
+
+/****-- HomePage Banner --*****/
+/* this is the settings mainly for the global background image */
+.home-banner{
+    width: 100%;
+    min-height: 200px;
+    /*background:  url(../Images/title_new.jpg) , no-repeat, 0, -500px;*/
+    background-image: url(../Images/title_new.jpg);
+    background-repeat: no-repeat;       /* Image doesn't repeat */
+    background-position: center center;  /* Image is centered vertically and horizontally at all times */
+    background-size: cover;              /* This is what makes the background image rescale based on its container's size */
+    margin-bottom: 30px;                /* after banner margin */
+    color: #ffffff;
+    text-align: center;
+    padding: 8vw;
+}
+.home-banner h1{
+    font-size: 3vw;
+}
+.home-banner p{
+    font-size: 1.5vw;
+}
+
+/****-- Images with Link Styling --*****/
+.w3-third h3{
+    font-size: 1.5vw;
+}
+
+/*----------------- Menu Page --------------*/
+table#Menu{ 
+    height: 80px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw;
+}
+table#Menu tr th{ 
+    background: #e8491D;
+    color: #000000 ;
+    text-align: center;
+    font-weight: bold;
+}
+table#Menu tr td{ 
+    background: #555353;
+    color: #ffffff;
+    border-top: 1px solid #FFF;
+    text-align: center;
+}
+table#MenuItems{
+    height: 250px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw;
+}
+table#MenuItems tr th{
+    background: #e8491D;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+table#MenuItems tr td{ 
+    background: #555353;
+    color: #ffffff;
+    border-top: 1px solid #FFF;
+    text-align: center;
+}
+
+#reservation-card {
+    box-shadow: 2px 2px 10px #000;
+    border: none;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1vw 1vw;
+}
+#reservation-card h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: #e8491D;
+    font-weight: bold;
+    padding-bottom:  1vw;
+    padding-top: 3vw;
+}
+@media screen and (max-width:530px){
+    #reservation-card { width: 100%; }
+    table#Menu{width: 100%;font-size: 3vw;}
+    table#MenuItems{width: 100%;font-size: 3vw;}
+} 
+/*----------------- Staff Page --------------*/
+table#staff{ 
+    height: 80px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vw;
+}

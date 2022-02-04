@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- add viewport to make your website responsivve -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the website -->
+        <title> THE HAUKAI RESTAURANT | Welcome </title>
+
+        <!-- Add link of the Style CSS to link Css Sheet to the HTML file-->
+        <link rel="stylesheet" href="Css/Style.css">
+
+        <!-- “w3.cc” style sheet  -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+    <body>
+        <!-- This is to display the Header -->
+        <header class="w3-container">
+            <div class="w3-row-padding">
+
+                <!-- This is to display Logo -->
+                <div class="w3-col w3-section w3-container" id="logo" style="width: 300px;">
+                    <a href="HomePage.html" aria-label="Go to Home page"> <img src="Logo/useLogo.png"  alt="The Haukai Restaurant logo" class="w3-image" style="width:100%">  </a>
+                </div>
+
+                <!-- This is to display Navigation Menu -->
+                <nav class="w3-rest w3-container w3-padding-16 w3-margin-top w3-xlarge w3-cursive w3-center w3-mobile">
+                    <a href="HomePage.html" class="w3-button w3-mobile w3-hover-black"> Home </a>
+                    <a href="MenuPage.html" class="w3-button w3-mobile w3-hover-black">  Menu </a>
+                    <a href="ReservationPage.html" class="w3-button w3-mobile w3-red w3-hover-black"> Reservation </a>
+                    <a href="HoursPage.html" class="w3-button w3-mobile w3-hover-black"> Hours </a>
+                    <a href="Contact_US.html" class="w3-button w3-mobile w3-hover-black"> Contact Us </a>
+                </nav>
+            </div>
+        </header>
+        
+       <main>
+            <!-- Reservation Page Banner -->
+            <div class = "home-banner">
+                <h1 class="w3-black w3-text-red w3-content"> Reservation </h1>
+            </div>
+
+            <!-- Reservation Page content -->
+            <div class="w3-container"  id="reservation-card">
+                <h2>Resservation Form</h2>
+
+                <!-- This is to display Form -->
+                <form  class="w3-container w3-card-4" action="/">
+                    <div class="w3-row-padding w3-section">
+                        <div class="w3-half">
+                            <label for="fname">First Name</label>
+                            <input class="w3-input w3-border w3-section" type="text" id="fname" name="firstname" autocomplete="firstname" aria-required="true" placeholder="First Name" required="">
+                        </div>
+                        <div class="w3-half">
+                            <label for="lname">Last Name</label>
+                            <input class="w3-input w3-border w3-section"type="text" id="lname" name="lastname" autocomplete="lastname" aria-required="true" placeholder="Last Name" required="">
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <label for="contact">Contact Number</label>
+                            <input class="w3-input w3-border w3-section" type="text" id="Contactno" name= "contactno" autocomplete="contactno" aria-required="true" placeholder="Contact Number" required="" >
+                        </div>
+                        <div class="w3-half">
+                            <label for="email">Email Address </label>
+                            <input class="w3-input w3-border w3-section" type="text" id="email" name= "email" autocomplete="email" aria-required="true" placeholder="E.g.xyz@email.com" required="">
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-third">
+                            <label for="date">Date</label>
+                            <input class="w3-input w3-border w3-section" id="date" name="date" aria-required="true"  required="" type="date" />
+                        </div>
+                        <div class="w3-third">
+                            <label for="date">Time</label>
+                            <input class="w3-input w3-border w3-section" id="appt" name="appt" aria-required="true" required="" type="time" />
+                        </div>
+                        <div class="w3-third">
+                            <label for="guests">No. of Guests</label>
+                            <select class="w3-select w3-border w3-section" id="guests" name="guests" aria-required="true" required="">
+                                    <option disabled selected value="">No. of Guests</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-col">
+                            <label for="subject">Any Extra Requirement</label>
+                            <textarea class="w3-input w3-border w3-section" id="subject" name="subject" aria-label="Add any Extra Requirement" placeholder="Any Extra Requirement" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="w3-button w3-block w3-padding-large w3-black w3-hover-red" type="submit">SUBMIT</button>
+                    <br>
+                </form>
+            </div>
+        </main>
+
+         <!-- This is to display the Footer -->
+        <footer class="w3-container w3-card w3-section">
+            <p w3-center> The Haukai Restaurant, copyright &copy; 2022<br>
+                <a href="Privacy.html" aria-label="Here is our privacy statement" target="_blank">Privacy Statement</a> 
+            </p>
+        </footer>
+    </body>
+</html>
+
