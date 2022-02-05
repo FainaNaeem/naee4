@@ -1,4 +1,4 @@
 AuthName "Staff Only"
-AuthUserFile "..\.htpasswd"
+AuthUserFile "https://github.com/FainaNaeem/naee4/blob/main/.htpasswd"
 AuthType Basic
 require valid-user
