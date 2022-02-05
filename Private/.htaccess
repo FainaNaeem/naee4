@@ -2,4 +2,3 @@ AuthName "Staff Only"
 AuthUserFile ..\.htpasswd
 AuthType Basic
 require valid-user
-Directory Index staffPage.html
