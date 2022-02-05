@@ -1,4 +1,0 @@
-AuthName "Staff Only"
-AuthUserFile
-AuthType Basic
-Require valid-user
